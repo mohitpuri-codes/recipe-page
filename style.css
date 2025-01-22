@@ -10,14 +10,11 @@ body {
   background-color: hsl(30, 54%, 90%);
   color: hsl(30, 10%, 34%);
 }
-section{
-    margin: 50px 0;
-}
 
 img {
-  height: 300px;
-  width: 750px;
-  max-width: 100%;
+  height: auto;
+  max-width: 750px;
+  width: 100%;
   border-radius: 12px;
 }
 
@@ -43,7 +40,6 @@ span {
 li {
   margin: 15px 0 15px 0;
   padding-left: 10px;
-  width: 77ch;
 }
 
 hr {
@@ -56,14 +52,15 @@ hr {
   display: flex;
   flex-direction: column;
   background-color: hsl(0, 0%, 100%);
-  width: fit-content;
+  width: 100%;
+  max-width: 800px;
   margin: 0 auto;
   padding: 35px;
   border-radius: 20px;
 }
 
 .recipe-description {
-  width: 77ch;
+  width: 100%;
 }
 
 .preparation-time {
@@ -111,9 +108,3 @@ hr {
 .table tr:not(:last-child) {
   border-bottom: 1px solid hsl(30, 18%, 87%);
 }
-
-@media screen and (max-width: 800px){
-    section{
-        margin: 0;
-    }
-  }
